@@ -1,0 +1,50 @@
+Context file:
+
+Létrehozása:
+
+DbSet-ek definiálása, amelyek az adott modellekre hallgatnak. Pl: Dbset<Model> Modelname {get; set;}
+
+Onconfiguring:
+
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+    optionsBuilder.UseMySql("Server=localhost;Database=dbname;Uid=root;Pwd=;", 
+ServerVersion.AutoDetect("Server=localhost;Database=dbname;Uid=root;Pwd=;"));
+}
+
+DateTime fromatting:
+
+:yyyy-MM-dd
+
+DateTime
+ParseExact:
+DateTime.ParseExact("somethingstring","dd-MM-YY",Culture.InvariantCulture())
+
+példa Bindingra:
+
+ItemsSource="{Binding SomethingBinding}"
+public ObservableCollection<string> SomethingBinding { get; set; }
+
+
+bindinghoz propfullt érdemes használni!
+
+MainWindowban kell az INotifyPropertyChanged-et importálni, és a Microsoft.EntityFrameworkCore-t!
+INotify az egy mainwindow-ban öröklendő osztály!
+
+Contextet létrekell hozni a program azon részén, ahol a binding logikát akarjuk használni!
+
+ctor példa:
+this.Datacontext = this;
+context.Modelname.Load();
+SomethingBinding = context.Modelname.Local.ToObservableCollection();
+
+KÖTELEZŐEN KELL ONPROPERTYCHANGED BINDING MEGVALÓSÍTÁSHOZ!!!
+
+public event PropertyChangedEventHandler PropertyChanged;
+public void OnPropertyChanged(string propertyName)
+{
+    PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+}
+
+ha egy adott model alapján hozunk létre egy bindingot, akkor az adott modelnek a propertyjei elérhetőek lesznek
+Tehát: propfull-ban Modelname somethingModel az xaml-ben elérhető a somethingModel.somethingProperty a bindinghoz.
