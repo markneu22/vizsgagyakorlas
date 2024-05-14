@@ -1,0 +1,166 @@
+FONTOS: HA MONGOOSE SERVER NEM MŰKÖDIK (CRASHEL) AKKOR 
+C/MAIN MEGHAJTÓN KELL EGY data/db FOLDER!! 
+
+npm i dotenv + express + mongoose + nodemon
+
+index.js létrehozása
+.env létrehozása
+routes.js létrehozása
+npm init
+
+.env fájl példa:
+mongodb://localhost:27017/something
+
+
+models mappa létrehozása, azon belül modellek létrehozása
+
+routes példa tartalma (ha nem lenne elérhető a saját projekt):
+
+const express = require('express')
+const ParentModel = require('pathtomodel')
+const ChildModel = require('pathtochild')
+const router = express.Router()
+// Post példa
+router.post('/', async (req, res) => {
+    const newChild = new Parent({
+        field1: req.body.field1,
+        field2: req.body.field2
+    })
+
+    try{
+        const saveData = await newChild.save();
+        res.status(201).json({mesage: "You're welcome"})
+    }
+    catch(error){
+        res.status(400).json({message: error.message})
+    }
+})
+
+// Get all példa
+
+router.get('/path', async (req, res) => {
+    try{
+        const data = await ParentModel.find();
+        res.json(data)
+    }
+    catch(error){
+        res.status(500).json({message: error.message})
+    }
+})
+// Get by field
+router.get('/:fieldName', async (req, res) => {
+    try{
+        const data = await ChildModel.find({"fieldName": req.params.fieldName})
+        .populate('location', '-_id')
+        if (data.length !== 0) {
+            res.json(data)
+        } else {
+            res.status(404).json({message: 'Hiba'})
+        }
+    }
+    catch(error){
+        res.status(500).json({message: error.message})
+    }
+})
+
+// Update by id
+
+router.patch('/:id', async (req, res) => {
+    try {
+        const id = req.params.id;
+        const updatedData = req.body;
+        const options = { new: true, runValidators: true }; 
+        const result = await ChildModel.findByIdAndUpdate(
+            id, updatedData, options
+        )
+        if (result) {
+            res.send(result)
+        } else {
+            res.status(400).json({ message: 'Hiba'  })
+        }
+    }
+    catch (error) {
+        res.status(400).json({ message: error.message })
+    }
+})
+
+router.delete('/delete/:id', async (req, res) => {
+    try {
+        const id = req.params.id;
+        const data = await Telefon.findByIdAndDelete(id)
+        res.send(`Message`)
+    }
+    catch (error) {
+        res.status(400).json({ message: error.message })
+    }
+})
+
+module.exports = router;
+
+Példa modellre:
+
+const mongoose = require('mongoose')
+
+const ChildModelSchema = new mongoose.Schema({
+	name: {
+		type: String,
+		required: [true, 'You have to give a name!'],
+		unique: true,
+		trim: true,
+		lowercase: true,
+		maxlength: [50, 'The name cannot be longer than 50 characters!']
+	},
+	wonMatches: {
+		type: Number,
+		default: 0
+	},
+	boxerSince: {
+		type: Date,
+		default: Date.now()
+	},
+	sponsorId: {
+		type: Number,
+		ref: 'Sponsor'
+	}
+})
+
+module.exports = mongoose.model('Boxer', ChildModelSchema, 'boxers')
+
+index.js példa:
+
+require('dotenv').config();
+
+const express = require('express');
+
+const mongoose = require('mongoose');
+mongoose.set('strictQuery', true);
+const mongoString = process.env.DATABASE_URL
+
+mongoose.connect(mongoString);
+const database = mongoose.connection
+
+database.on('error', (error) => {
+    console.log(error)
+})
+
+database.once('connected', () => {
+    console.log('Database Connected');
+})
+
+const app = express();
+const routes = require('./routes/routes');
+
+app.use(express.json());
+
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*')
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE')
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+    next()
+})
+
+app.use('/api', routes)
+
+app.listen(3000, () => {
+    console.log(`Server Started at ${3000}`)
+})
