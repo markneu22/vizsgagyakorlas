@@ -1,0 +1,145 @@
+﻿azon;nev;hossz;allomas;ido;vezetes;telepulesid
+1;Anna-ligeti tanösvény ;2.0;8;1.5;true;89
+2;Apródok útja tanösvény ;7.2;8;3;true;27
+3;Aqua Colun tanösvény ;3.5;5;2;true;45
+4;Árpád fejedelem tanösvény ;3.0;11;2;true;100
+5;Ártéri tanösvény ;0.5;4;0.5;true;106
+6;Babócsai Basa-kert tanösvény ;1.0;2;1;true;6
+7;Baradla tanösvény ;7.5;18;3;true;3
+8;Bárányfoki tanösvény ;2.1;6;1;true;93
+9;Báránypirosító tanösvény ;1.6;5;1.6;true;35
+10;Barát-réti tanösvény ;6.5;4;3;true;32
+11;Barcsi Borókás tanösvény ;2.0;4;1;true;10
+12;Bazaltorgonák tanösvény ;4.0;7;2;true;51
+13;Bél-kői tanösvény ;5.0;7;2.5;true;11
+14;Bihari-sík tanösvény ;7.2;20;5.2;true;12
+15;Bodrogzugi vízitúra tanösvény ;5.0;3;2;false;103
+16;Bódva-völgyi tanösvény ;2.5;7;1;false;78
+17;Boróka tanösvény ;2.9;5;1.5;true;15
+18;Boros-Dráva tanösvény ;1.0;2;0.5;true;67
+19;Boroszlán tanösvény ;7.0;8;3;true;7
+20;Boszorkány-kő geológiai tanösvény ;0.4;13;0.5;true;83
+21;Bőköz tanösvény ;4.0;6;1.5;true;52
+22;Bölömbika tanösvény ;3.0;6;1.5;true;62
+23;Búbos vöcsök tanösvény ;1.5;13;1.5;false;9
+24;Buda-hegyi tanösvény;2.0;8;3;true;84
+25;Cankó tanösvény ;1.0;9;1.5;true;36
+26;Cégénydányádi Kastélypark tanösvény ;1.5;19;1;false;17
+27;Chernel-kerti tanösvény ;0.5;0;0.5;false;54
+28;Cserépfalui Ördögtorony tanösvény ;10.0;20;4.5;true;22
+29;Csipak tanösvény ;3.0;9;1.5;true;62
+30;Csodarét tanösvény ;4.0;10;2;true;5
+31;Csomoros-sziget tanösvény ;0.7;10;1;true;10
+32;Csörgőalma tanösvény ;0.0;1;0.5;true;71
+33;Denevér tanösvény ;5.0;13;3;true;1
+34;Erdei tanösvény ;2.7;6;2;true;15
+35;Eresztvényi kőbányák ;2.5;6;1;true;83
+36;Erzsébet-sziget tanösvény ;3.0;2;1.5;true;6
+37;Fekete harkály tanösvény ;5.0;13;3;true;47
+38;Felsőszeri tanösvény ;1.7;6;1;true;88
+39;Fóti-Somlyó tanösvény ;3.5;11;3;true;34
+40;Földtani tanösvény ;2.0;13;1.5;true;37
+41;Fürge cselle tanösvény ;3.2;8;1.5;true;50
+42;Fürkész ösvény ;2.0;12;1.5;true;46
+43;Górési tanösvény ;11.0;5;3;true;101
+44;Halásztelki tanösvény ;3.0;10;1.5;true;89
+45;Hankovszky-liget tanösvény ;0.4;8;0.5;true;48
+46;Hany Istók tanösvény ;5.0;7;2;false;70
+47;Haraszt-hegyi tanösvény ;3.5;7;3;true;20
+48;Holt-Rába tanösvény ;6.0;5;2;false;41
+49;Ilona-völgyi geológiai tanösvény ;6.5;9;2.5;true;76
+50;Ipolytarnóc - Biológiai tanösvény ;6.0;13;1.25;true;44
+51;Ipolytarnóc - Borókás-árok geológiai tanösvény ;0.8;7;1;true;44
+52;Ipolytarnóc - Kőszikla tanösvény ;0.9;20;1.5;true;44
+53;Ipolytarnóc - Kőzetpark ;0.7;20;0.5;true;44
+54;Jági tanösvény ;3.5;6;2;true;79
+55;Jakab-hegyi tanösvény ;8.0;10;2;true;23
+56;Jávorkúti tanösvény ;3.0;4;1;true;38
+57;Jónásrészi tanösvény ;5.0;11;3;true;104
+58;Káli-medence túrahálózat ;25.0;79;8;true;49
+59;Kamon-kő tanösvény ;6.0;9;3;true;95
+60;Kékbegy tanösvény ;0.2;3;0.5;true;31
+61;Kékmoszat tanösvény ;2.4;12;2;true;28
+62;Kesznyéteni TK agrár-környezetgazdálkodási tanösvény ;4.8;6;3.5;true;102
+63;Kígyósi tanösvény ;5.0;4;2;false;87
+64;Kismély-völgyi tanösvény ;1.0;5;1;true;77
+65;Kisvátyoni tanösvény ;8.0;6;3;false;13
+66;Kitaibel tanösvény ;3.0;9;2;true;86
+67;Kontyvirág tanösvény ;2.4;6;1.5;true;56
+68;Kormorános-erdő tanösvény ;2.0;6;0.5;true;59
+69;Kosbor tanösvény ;1.7;5;1.5;true;55
+70;Kő-közi tanösvény ;0.8;5;1;true;32
+71;Kőpark tanösvény ;0.2;0;0.5;true;14
+72;Körtike tanösvény ;6.2;11;2.5;true;88
+73;Kövi benge tanösvény ;0.3;20;1;false;33
+74;Lóczy gejzír-sétaút ;18.0;15;6;true;99
+75;Madarak és fák útja ;1.0;5;1;true;15
+76;Madárvédelmi tanösvény ;0.3;8;0.5;true;54
+77;Mágor-pusztai tanösvény ;0.5;5;1.5;false;92
+78;Magyar-bányai kőpark ;0.2;13;0.5;true;83
+79;Mérus-erdő tanösvény ;1.0;1;0.5;true;6
+80;Millenniumi természetismereti és erdészeti bemutató sétaút ;2.5;20;1;true;96
+81;Nagymező - Kis-kőháti-zsomboly tanösvény ;3.0;3;1;true;96
+82;Nagypartosi tanösvény ;2.5;6;1;true;53
+83;Nagy-Szénás tanösvény ;2.1;7;1.5;true;63
+84;Nyéki-Holt-Duna tanösvény ;2.2;6;1;true;81
+85;Óbányai Pro Silva tanösvény ;2.0;5;0.5;true;65
+86;Olasz-kapui tanösvény ;7.2;6;3;true;96
+87;Orfűi Vízfő tanösvény ;1.0;4;0.5;true;68
+88;Öregtavi tanösvény ;25.0;18;6;true;43
+89;Őrtilosi Dráva-ártér tanösvény ;2.0;0;0.75;true;72
+90;Paksi Ürge-mező tanösvény ;4.0;11;1;true;73
+91;Pálfája tanösvény ;1.8;10;1.5;true;64
+92;Páskom legelő tanösvény ;3.0;6;2;true;25
+93;Pele apó ösvénye ;8.5;38;5;true;8
+94;Pele körút ;0.8;10;1;true;24
+95;Pimpó tanösvény ;5.8;6;4;true;69
+96;Poszáta tanösvény ;2.0;8;1.5;true;45
+97;Ravazd-Sokorópátkai tanösvény ;15.0;3;3;false;82
+98;Réce tanösvény ;1.0;5;0.5;true;4
+99;Réhelyi tanösvény ;1.5;8;1;true;26
+100;Rejtek - Répáshuta tanösvény ;9.0;12;4.5;true;16
+101;Rekettye tanösvény ;2.3;6;2;true;2
+102;Rezgőnyár tanösvény ;0.3;7;0.5;true;71
+103;Ság-hegy élővilága ;0.2;13;0.2;true;18
+104;Ság-hegyi geológiai tanösvény ;1.0;18;0.5;true;18
+105;Salgó - Somoskő vára tanösvény ;3.5;6;1;true;83
+106;Sárgaliliom tanösvény ;6.2;11;2.5;true;58
+107;Sár-hegyi természetismereti tanösvény ;7.0;12;3;true;40
+108;Sas-hegy tanösvény ;0.9;7;1;true;14
+109;Sáskajárás sétaút ;0.8;8;1;true;15
+110;Selyem-réti tanösvény ;1.5;6;2;true;66
+111;Sirály tanösvény ;2.0;5;1.5;true;91
+112;Sóvirág tanösvény ;0.5;0;1;true;31
+113;Sötét-völgyi tanösvény ;4.3;9;2;true;93
+114;Strázsa-hegyi tanösvény ;1.2;7;1.5;true;30
+115;Szádvár tanösvény ;4.5;12;3;true;97
+116;Szalajka-völgyi természetvédelmi bemutatóösvény ;4.2;10;2.5;true;96
+117;Szala menti tanösvény ;3.8;9;1.5;true;71
+118;Szálkahalmi tanösvény ;1.1;5;1;true;43
+119;Szarvaskői geológiai tanösvény ;8.8;11;3.5;true;90
+120;Szeremlei-Holt-Duna tanösvény ;2.4;6;1;true;94
+121;Szigetközi Ökoturisztikai Bemutató Útvonal ;18.0;12;2;false;29
+122;Sziki őszirózsa tanösvény ;4.0;10;2;false;85
+123;Szilvás-kői geológiai tanösvény ;3.5;12;1.5;true;83
+124;Szinva tanösvény ;4.0;6;3;true;60
+125;Szomoróczi tanösvény ;3.0;6;1;true;50
+126;Tanösvény a Turjánban ;1.2;9;1;true;66
+127;Tarpai Szőlő-hegy tanösvény ;3.0;6;2;false;98
+128;Templom-hegyi tanösvény ;2.0;6;1;true;105
+129;Pannonhalmi arborétum;1.5;3;0.3;false;75
+130;Tisza-tavi vízi sétány és tanösvény ;1.5;4;2;true;80
+131;Tohonya-Kuriszlán tanösvény II. útvonal ;9.0;25;6;true;46
+132;Tohonya-Kuriszlán tanösvény I. útvonal ;4.5;12;2.5;true;46
+133;Tőzike tanösvény ;3.0;5;1;true;19
+134;Tüskés-réti tanösvény ;1.0;4;1;true;77
+135;Újmohácsi tanösvény ;3.1;7;1;true;61
+136;Üde rétek tanösvény ;3.0;5;2;true;10
+137;Várdomb tanösvény ;0.3;6;0.5;false;100
+138;Vár-hegyi tanösvény ;10.0;6;4.5;true;32
+139;Vártúra ösvény ;1.2;0;1;true;42
+140;Vár-völgyi földtani tanösvény ;3.0;10;1;true;57
+141;Vasút-oldali túraútvonal ;10.0;1;2.5;true;39
+142;Vizi Rence Túraútvonal ;6.0;0;3;true;33
+143;Vöcsök tanösvény ;3.2;7;2.5;true;74
+144;Vörös-mocsár tanösvény ;2.5;2;2;true;21

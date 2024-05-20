@@ -1,0 +1,33 @@
+﻿<Window x:Class="Tanosvenyek_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tanosvenyek_GUI"
+        mc:Ignorable="d"
+        Title="Tanösvények" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Label Content="Város:" VerticalAlignment="Center"/>
+            <ComboBox x:Name="varosok_CBX" Width="200" Height="30" SelectedIndex="0" ItemsSource="{Binding Telepulesek}" SelectionChanged="varosok_CBX_SelectionChanged" DisplayMemberPath="nev"/>
+        </StackPanel>
+        <DataGrid x:Name="data_DG" Grid.Row="1" IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding KijeloltUtvonalak}" SelectionChanged="data_DG_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="0.2*" Binding="{Binding azon}"/>
+                <DataGridTextColumn Header="Név" Width="2*" Binding="{Binding nev}"/>
+                <DataGridTextColumn Header="Hossz" Width="*" Binding="{Binding hossz}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="{Binding SelectedUtvonal.ido}" FontWeight="Bold" ContentStringFormat="Idő: {0}"/>
+            <Label Content="{Binding SelectedUtvonal.allomas}" FontWeight="Bold" ContentStringFormat="Állomások száma: {0}"/>
+            <Label Content="{Binding SelectedUtvonal.vezetes_szoveg}" FontWeight="Bold" ContentStringFormat="Vezetés igen/nem: {0}"/>
+        </StackPanel>
+    </Grid>
+</Window>
